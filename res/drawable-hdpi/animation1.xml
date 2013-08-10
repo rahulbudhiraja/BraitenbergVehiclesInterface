@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"  android:id="@+id/spinning_animation1" android:oneshot="false">
+    
+    <item android:drawable="@drawable/circ001" android:duration="250" />
+    <item android:drawable="@drawable/circ101" android:duration="250" />
+    <item android:drawable="@drawable/circ201" android:duration="250" />
+    <item android:drawable="@drawable/circ301" android:duration="250" />
+    <item android:drawable="@drawable/circ401" android:duration="250" />
+    <item android:drawable="@drawable/circ501" android:duration="250" />
+    <item android:drawable="@drawable/circ601" android:duration="250" />
+	<item android:drawable="@drawable/circ701" android:duration="250" />
+    <item android:drawable="@drawable/circ801" android:duration="250" />
+    <item android:drawable="@drawable/circ901" android:duration="250" />
+	
+</animation-list>

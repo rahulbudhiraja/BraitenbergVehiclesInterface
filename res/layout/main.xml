@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <view
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bodyButton"
+        class="com.fluid.braitenbergvehicles.DrawingView" />
+
+    <TextView
+        android:id="@+id/sensorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor:"
+        android:layout_marginTop="98dp"
+        android:layout_marginLeft="192dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/vehicleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Type:"
+        android:layout_marginTop="98dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/bodyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bodyunselected" 
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/sensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sensorunselected" />
+
+    <ImageButton
+        android:id="@+id/wiringButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/sensorButton"
+        android:background="@android:color/transparent"
+        android:src="@drawable/wiringunselected" />
+
+    <ImageButton
+        android:id="@+id/sensorEdgeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sensorcolorbutton"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/greenbutton"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/singleBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/sensorcolorbutton"
+        android:background="@android:color/transparent"
+        android:src="@drawable/onemotorunselected"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/dualBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singleBody"
+        android:layout_marginTop="1dp"
+        android:layout_toLeftOf="@id/wiringButton"
+        android:background="@android:color/transparent"
+        android:src="@drawable/twomotorsunselected"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/sensorcolorbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/redbutton"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/sensorAreaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sensorEdgeButton"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/bluebutton"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/leftAnimationRing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sensorAreaButton"
+        android:layout_alignRight="@+id/wiringButton"
+        android:layout_marginRight="62dp"
+        android:src="@drawable/circ001" />
+
+    <ImageView
+        android:id="@+id/vehicleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sensorAreaButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/twobody"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/rightAnimationRing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sensorAreaButton"
+        android:layout_alignRight="@+id/vehicleImageView"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/circr0" />
+
+    <ImageView
+        android:id="@+id/leftmotorAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vehicleImageView"
+        android:layout_alignLeft="@+id/vehicleImageView"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/motcirc0" />
+
+    <ImageView
+        android:id="@+id/rightmotorAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/vehicleImageView"
+        android:layout_alignTop="@+id/leftmotorAnimation"
+        android:layout_marginRight="-10dp"
+        android:src="@drawable/motcircr0" />
+
+    <ImageView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/vehicleImageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/text101" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leftmotorAnimation"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        android:src="@drawable/play_button" />
+
+    <ImageButton
+        android:id="@+id/connectionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/vehicleImageView"
+        android:background="@android:color/transparent"
+        android:src="@drawable/greenplus" />
+
+</RelativeLayout>

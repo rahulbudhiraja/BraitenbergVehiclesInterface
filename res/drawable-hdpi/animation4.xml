@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"  android:id="@+id/spinning_animation1" android:oneshot="false">
+    
+    <item android:drawable="@drawable/circ001" android:duration="250" />
+    <item android:drawable="@drawable/motcircr1" android:duration="250" />
+    <item android:drawable="@drawable/motcircr2" android:duration="250" />
+    <item android:drawable="@drawable/motcircr3" android:duration="250" />
+    <item android:drawable="@drawable/motcircr4" android:duration="250" />
+    <item android:drawable="@drawable/motcircr5" android:duration="250" />
+    <item android:drawable="@drawable/motcircr6" android:duration="250" />
+    <item android:drawable="@drawable/motcircr7" android:duration="250" />
+	<item android:drawable="@drawable/motcircr8" android:duration="250" />
+    <item android:drawable="@drawable/motcircr9" android:duration="250" />
+	
+</animation-list>
